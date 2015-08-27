@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AirWink" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XuY-4w-wEq">
+                                <rect key="frame" x="268" y="280" width="70" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="okh-0s-db3"/>
+                                    <constraint firstAttribute="width" constant="70" id="qAh-3F-oPI"/>
+                                </constraints>
+                                <state key="normal" title="Connect">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="eXI-AF-Cbu" kind="modal" id="6qI-MZ-acP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="XuY-4w-wEq" secondAttribute="centerY" id="KTz-ov-OLm"/>
+                            <constraint firstAttribute="centerX" secondItem="XuY-4w-wEq" secondAttribute="centerX" id="b2r-df-xHZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="connectButton" destination="XuY-4w-wEq" id="XZX-iq-p0b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Live View-->
+        <scene sceneID="Ea0-Ak-tQd">
+            <objects>
+                <viewController id="eXI-AF-Cbu" customClass="LiveView" customModule="AirWink" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TL1-fH-3VJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Lc6-ef-yQI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleAspectFit" id="9ie-5m-Ujc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lze-ds-n2a">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Lze-ds-n2a" secondAttribute="trailing" constant="-16" id="0Om-JZ-id0"/>
+                            <constraint firstItem="Lc6-ef-yQI" firstAttribute="top" secondItem="Lze-ds-n2a" secondAttribute="bottom" id="6Vz-Q9-uP1"/>
+                            <constraint firstItem="Lze-ds-n2a" firstAttribute="top" secondItem="TL1-fH-3VJ" secondAttribute="bottom" id="7EO-TD-H7p"/>
+                            <constraint firstItem="Lze-ds-n2a" firstAttribute="leading" secondItem="9ie-5m-Ujc" secondAttribute="leadingMargin" constant="-16" id="JRk-E5-Agt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="liveViewImage" destination="Lze-ds-n2a" id="c1K-VD-3eK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xcn-nv-gkW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1061" y="400"/>
+        </scene>
+    </scenes>
+</document>

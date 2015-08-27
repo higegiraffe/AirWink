@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 47;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9DF848F81B8DFC6500EE5892 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF848F71B8DFC6500EE5892 /* AppDelegate.swift */; };
+		9DF848FA1B8DFC6500EE5892 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF848F91B8DFC6500EE5892 /* ViewController.swift */; };
+		9DF848FD1B8DFC6500EE5892 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DF848FB1B8DFC6500EE5892 /* Main.storyboard */; };
+		9DF848FF1B8DFC6500EE5892 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DF848FE1B8DFC6500EE5892 /* Images.xcassets */; };
+		9DF849021B8DFC6500EE5892 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DF849001B8DFC6500EE5892 /* LaunchScreen.xib */; };
+		9DF8490E1B8DFC6500EE5892 /* AirWinkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF8490D1B8DFC6500EE5892 /* AirWinkTests.swift */; };
+		9DF849181B8DFD7D00EE5892 /* OLYCameraKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DF849171B8DFD7D00EE5892 /* OLYCameraKit.framework */; };
+		9DF8491C1B8E056400EE5892 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF8491B1B8E056400EE5892 /* MBProgressHUD.m */; };
+		9DF849221B8F2ACE00EE5892 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF849211B8F2ACE00EE5892 /* Reachability.m */; };
+		9DF849241B8F374600EE5892 /* LiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF849231B8F374600EE5892 /* LiveView.swift */; };
+		9DF8492A1B8F407300EE5892 /* CameraUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF849291B8F407300EE5892 /* CameraUtil.swift */; };
+		9DF8492C1B8F407C00EE5892 /* detector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF8492B1B8F407C00EE5892 /* detector.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9DF849081B8DFC6500EE5892 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9DF848EA1B8DFC6500EE5892 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9DF848F11B8DFC6500EE5892;
+			remoteInfo = AirWink;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9DF848F21B8DFC6500EE5892 /* AirWink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirWink.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DF848F61B8DFC6500EE5892 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DF848F71B8DFC6500EE5892 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9DF848F91B8DFC6500EE5892 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9DF848FC1B8DFC6500EE5892 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9DF848FE1B8DFC6500EE5892 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9DF849011B8DFC6500EE5892 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		9DF849071B8DFC6500EE5892 /* AirWinkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirWinkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DF8490C1B8DFC6500EE5892 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DF8490D1B8DFC6500EE5892 /* AirWinkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirWinkTests.swift; sourceTree = "<group>"; };
+		9DF849171B8DFD7D00EE5892 /* OLYCameraKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OLYCameraKit.framework; path = ../OLYCameraKit.framework; sourceTree = "<group>"; };
+		9DF849191B8E034D00EE5892 /* AirWink-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AirWink-Bridging-Header.h"; sourceTree = "<group>"; };
+		9DF8491A1B8E055500EE5892 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		9DF8491B1B8E056400EE5892 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		9DF849201B8F2AC200EE5892 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		9DF849211B8F2ACE00EE5892 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		9DF849231B8F374600EE5892 /* LiveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveView.swift; sourceTree = "<group>"; };
+		9DF849291B8F407300EE5892 /* CameraUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraUtil.swift; sourceTree = "<group>"; };
+		9DF8492B1B8F407C00EE5892 /* detector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = detector.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9DF848EF1B8DFC6500EE5892 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DF849181B8DFD7D00EE5892 /* OLYCameraKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DF849041B8DFC6500EE5892 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9DF848E91B8DFC6500EE5892 = {
+			isa = PBXGroup;
+			children = (
+				9DF848F41B8DFC6500EE5892 /* AirWink */,
+				9DF8490A1B8DFC6500EE5892 /* AirWinkTests */,
+				9DF848F31B8DFC6500EE5892 /* Products */,
+				9DF8491F1B8E06BD00EE5892 /* Framework */,
+			);
+			sourceTree = "<group>";
+		};
+		9DF848F31B8DFC6500EE5892 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9DF848F21B8DFC6500EE5892 /* AirWink.app */,
+				9DF849071B8DFC6500EE5892 /* AirWinkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9DF848F41B8DFC6500EE5892 /* AirWink */ = {
+			isa = PBXGroup;
+			children = (
+				9DF849191B8E034D00EE5892 /* AirWink-Bridging-Header.h */,
+				9DF8491B1B8E056400EE5892 /* MBProgressHUD.m */,
+				9DF8491A1B8E055500EE5892 /* MBProgressHUD.h */,
+				9DF848F71B8DFC6500EE5892 /* AppDelegate.swift */,
+				9DF849211B8F2ACE00EE5892 /* Reachability.m */,
+				9DF849201B8F2AC200EE5892 /* Reachability.h */,
+				9DF848F91B8DFC6500EE5892 /* ViewController.swift */,
+				9DF848FB1B8DFC6500EE5892 /* Main.storyboard */,
+				9DF8492B1B8F407C00EE5892 /* detector.swift */,
+				9DF849291B8F407300EE5892 /* CameraUtil.swift */,
+				9DF849231B8F374600EE5892 /* LiveView.swift */,
+				9DF848FE1B8DFC6500EE5892 /* Images.xcassets */,
+				9DF849001B8DFC6500EE5892 /* LaunchScreen.xib */,
+				9DF848F51B8DFC6500EE5892 /* Supporting Files */,
+			);
+			path = AirWink;
+			sourceTree = "<group>";
+		};
+		9DF848F51B8DFC6500EE5892 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9DF848F61B8DFC6500EE5892 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9DF8490A1B8DFC6500EE5892 /* AirWinkTests */ = {
+			isa = PBXGroup;
+			children = (
+				9DF8490D1B8DFC6500EE5892 /* AirWinkTests.swift */,
+				9DF8490B1B8DFC6500EE5892 /* Supporting Files */,
+			);
+			path = AirWinkTests;
+			sourceTree = "<group>";
+		};
+		9DF8490B1B8DFC6500EE5892 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9DF8490C1B8DFC6500EE5892 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9DF8491F1B8E06BD00EE5892 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				9DF849171B8DFD7D00EE5892 /* OLYCameraKit.framework */,
+			);
+			name = Framework;
+			path = AirWink.xcodeproj;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9DF848F11B8DFC6500EE5892 /* AirWink */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DF849111B8DFC6500EE5892 /* Build configuration list for PBXNativeTarget "AirWink" */;
+			buildPhases = (
+				9DF848EE1B8DFC6500EE5892 /* Sources */,
+				9DF848EF1B8DFC6500EE5892 /* Frameworks */,
+				9DF848F01B8DFC6500EE5892 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AirWink;
+			productName = AirWink;
+			productReference = 9DF848F21B8DFC6500EE5892 /* AirWink.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9DF849061B8DFC6500EE5892 /* AirWinkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DF849141B8DFC6500EE5892 /* Build configuration list for PBXNativeTarget "AirWinkTests" */;
+			buildPhases = (
+				9DF849031B8DFC6500EE5892 /* Sources */,
+				9DF849041B8DFC6500EE5892 /* Frameworks */,
+				9DF849051B8DFC6500EE5892 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9DF849091B8DFC6500EE5892 /* PBXTargetDependency */,
+			);
+			name = AirWinkTests;
+			productName = AirWinkTests;
+			productReference = 9DF849071B8DFC6500EE5892 /* AirWinkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9DF848EA1B8DFC6500EE5892 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = higegiraffe;
+				TargetAttributes = {
+					9DF848F11B8DFC6500EE5892 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 374EAD2TU6;
+					};
+					9DF849061B8DFC6500EE5892 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 9DF848F11B8DFC6500EE5892;
+					};
+				};
+			};
+			buildConfigurationList = 9DF848ED1B8DFC6500EE5892 /* Build configuration list for PBXProject "AirWink" */;
+			compatibilityVersion = "Xcode 6.3";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9DF848E91B8DFC6500EE5892;
+			productRefGroup = 9DF848F31B8DFC6500EE5892 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9DF848F11B8DFC6500EE5892 /* AirWink */,
+				9DF849061B8DFC6500EE5892 /* AirWinkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9DF848F01B8DFC6500EE5892 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DF848FD1B8DFC6500EE5892 /* Main.storyboard in Resources */,
+				9DF849021B8DFC6500EE5892 /* LaunchScreen.xib in Resources */,
+				9DF848FF1B8DFC6500EE5892 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DF849051B8DFC6500EE5892 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9DF848EE1B8DFC6500EE5892 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DF8492A1B8F407300EE5892 /* CameraUtil.swift in Sources */,
+				9DF848FA1B8DFC6500EE5892 /* ViewController.swift in Sources */,
+				9DF8492C1B8F407C00EE5892 /* detector.swift in Sources */,
+				9DF849241B8F374600EE5892 /* LiveView.swift in Sources */,
+				9DF8491C1B8E056400EE5892 /* MBProgressHUD.m in Sources */,
+				9DF849221B8F2ACE00EE5892 /* Reachability.m in Sources */,
+				9DF848F81B8DFC6500EE5892 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DF849031B8DFC6500EE5892 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DF8490E1B8DFC6500EE5892 /* AirWinkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9DF849091B8DFC6500EE5892 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9DF848F11B8DFC6500EE5892 /* AirWink */;
+			targetProxy = 9DF849081B8DFC6500EE5892 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9DF848FB1B8DFC6500EE5892 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9DF848FC1B8DFC6500EE5892 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9DF849001B8DFC6500EE5892 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9DF849011B8DFC6500EE5892 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9DF8490F1B8DFC6500EE5892 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9DF849101B8DFC6500EE5892 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9DF849121B8DFC6500EE5892 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = AirWink/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "/Users/higegiraffe/Documents/xcode/AirWink/AirWink/AirWink-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		9DF849131B8DFC6500EE5892 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = AirWink/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "/Users/higegiraffe/Documents/xcode/AirWink/AirWink/AirWink-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		9DF849151B8DFC6500EE5892 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AirWinkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AirWink.app/AirWink";
+			};
+			name = Debug;
+		};
+		9DF849161B8DFC6500EE5892 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AirWinkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AirWink.app/AirWink";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9DF848ED1B8DFC6500EE5892 /* Build configuration list for PBXProject "AirWink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DF8490F1B8DFC6500EE5892 /* Debug */,
+				9DF849101B8DFC6500EE5892 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DF849111B8DFC6500EE5892 /* Build configuration list for PBXNativeTarget "AirWink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DF849121B8DFC6500EE5892 /* Debug */,
+				9DF849131B8DFC6500EE5892 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DF849141B8DFC6500EE5892 /* Build configuration list for PBXNativeTarget "AirWinkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DF849151B8DFC6500EE5892 /* Debug */,
+				9DF849161B8DFC6500EE5892 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9DF848EA1B8DFC6500EE5892 /* Project object */;
+}
