@@ -12,6 +12,7 @@ import AVFoundation
 class LiveView: UIViewController , OLYCameraLiveViewDelegate , OLYCameraRecordingSupportsDelegate , AVCaptureVideoDataOutputSampleBufferDelegate{
     @IBOutlet weak var liveViewImage: UIImageView!
     
+    @IBOutlet weak var FaceDetectImage: UIImageView!
     //顔認識用のsecretView
     var secretView: UIImageView!
     
@@ -35,8 +36,6 @@ class LiveView: UIViewController , OLYCameraLiveViewDelegate , OLYCameraRecordin
     let NotBlinkingNotification = NSNotification(name: "NotBlinkingNotification", object: nil)
     let NoFaceDetectedNotification = NSNotification(name: "NoFaceDetectedNotification", object: nil)
     let FaceDetectedNotification = NSNotification(name: "FaceDetectedNotification", object: nil)
-    
-    let emojiLabel : UILabel = UILabel(frame: UIScreen.mainScreen().bounds)
     
     var orientation = 0
     
@@ -65,21 +64,15 @@ class LiveView: UIViewController , OLYCameraLiveViewDelegate , OLYCameraRecordin
             //顔認識関連の関数
             detectFaces()
             
-            //顔認識の状態表示
-            emojiLabel.text = "💤"
-            emojiLabel.font = UIFont.systemFontOfSize(50)
-            emojiLabel.textAlignment = .Left
-            self.view.addSubview(emojiLabel)
-            
-            
             //顔認識表示の処理
             NSNotificationCenter.defaultCenter().addObserverForName("FaceDetectedNotification", object: nil, queue: NSOperationQueue.mainQueue(), usingBlock: { notification in
                 //顔認識の状態表示
-                self.emojiLabel.text = "😊"
+                self.FaceDetectImage.image = (UIImage(named:"FaceDetect"))
             })
             //非顔認識表示の処理
             NSNotificationCenter.defaultCenter().addObserverForName("NoFaceDetectedNotification", object: nil, queue: NSOperationQueue.mainQueue(), usingBlock: { notification in
-                self.emojiLabel.text = "💤"
+
+                self.FaceDetectImage.image = (UIImage(named:"NotFaceDetect"))
             })
             
             //RightEyeClosedNotification通知時の処理
